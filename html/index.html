@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-white dark:bg-gray-900">
+  <body class="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
     <nav
       class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default"
     >
@@ -24,16 +24,21 @@
           <img src="../picture/BORAN LOGO.png" class="h-7" alt="Boran Logo" />
         </a>
 
-        <!-- Mobile menu toggle (was missing — links were unreachable on phones) -->
         <button
           data-collapse-toggle="navbar-menu"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-heading rounded-lg md:hidden hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-fg-brand"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-menu"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
             <path
               stroke="currentColor"
               stroke-linecap="round"
@@ -46,30 +51,31 @@
 
         <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-gray-50 md:bg-transparent border border-default md:border-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:dark:bg-transparent dark:bg-gray-800 dark:border-gray-700"
           >
             <li>
               <a
                 href="index.html"
+                class="block py-2 px-3 text-black hover:underline rounded md:bg-transparent md:text-fg-brand md:p-0"
                 aria-current="page"
-                class="block py-2 px-3 text-fg-brand font-semibold rounded md:bg-transparent md:p-0"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="history.html"
-                class="block py-2 px-3 text-heading rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                class="block py-2 px-3 text-black rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
                 >History</a
               >
             </li>
             <li>
               <a
                 href="instrument.html"
-                class="block py-2 px-3 text-heading rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                class="block py-2 px-3 text-black rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
                 >Instrument</a
               >
             </li>
+
             <li>
               <a
                 href="about.html"
@@ -82,15 +88,9 @@
       </div>
     </nav>
 
-    <main class="max-w-screen-xl mx-auto p-4 pt-24">
-      <!-- Hero -->
-      <section class="text-center max-w-2xl mx-auto pt-12 pb-16">
-        <p
-          class="font-body text-xs uppercase tracking-[0.25em] text-fg-brand mb-4"
-        >
-          Cambodian Heritage, Online
-        </p>
-        <h1 class="font-moul text-5xl text-fg-brand mb-6">Boran</h1>
+    <main class="max-w-screen-xl mx-auto p-4 pt-24 flex-grow w-full">
+      <section class="text-center max-w-2xl mx-auto pt-4 pb-16">
+        <h1 class="font-moul text-5xl text-orange-500 mb-6">Boran</h1>
         <p class="text-heading text-lg leading-8">
           A digital gateway to the rich and vibrant heritage of Cambodia. Our
           platform is dedicated to sharing our unique culture, classical arts,
@@ -99,19 +99,13 @@
         </p>
         <a
           href="instrument.html"
-          class="inline-block mt-8 px-6 py-2.5 rounded-full border border-fg-brand text-fg-brand font-medium hover:bg-fg-brand hover:text-white transition-colors"
+          class="inline-block mt-8 px-6 py-2.5 rounded-full border border-orange-500 text-black font-medium hover:bg-orange-500 hover:text-white transition-colors"
         >
           Explore the Instruments
         </a>
       </section>
 
-      <!-- Gallery -->
       <section class="pb-16">
-        <p
-          class="font-body text-xs uppercase tracking-[0.25em] text-fg-brand text-center mb-3"
-        >
-          A Glimpse Inside
-        </p>
         <h2 class="text-2xl font-bold text-center text-heading mb-10">
           Here's some of the culture we'd like to share
         </h2>
@@ -181,20 +175,17 @@
             </span>
           </div>
 
-          <!-- "Coming soon" placeholders, styled like the real cards so the
-               6-item grid stays even (2 rows of 3) instead of leaving an
-               orphaned mismatched box on its own row -->
           <div
-            class="relative overflow-hidden aspect-[4/3] w-full rounded-2xl border-2 border-dashed border-fg-brand/40 flex items-center justify-center bg-neutral-primary"
+            class="relative w-full rounded-2xl border-2 border-dashed flex items-center justify-center"
           >
-            <p class="text-xl font-bold text-fg-brand/70 tracking-tight">
+            <p class="text-2xl font-bold text-orange-500 tracking-tight">
               Coming Soon...
             </p>
           </div>
           <div
-            class="relative overflow-hidden aspect-[4/3] w-full rounded-2xl border-2 border-dashed border-fg-brand/40 flex items-center justify-center bg-neutral-primary"
+            class="relative w-full rounded-2xl border-2 border-dashed flex items-center justify-center"
           >
-            <p class="text-xl font-bold text-fg-brand/70 tracking-tight">
+            <p class="text-2xl font-bold text-orange-500 tracking-tight">
               Coming Soon...
             </p>
           </div>
@@ -202,8 +193,7 @@
       </section>
     </main>
 
-    <!-- footer section -->
-    <footer class="border-t border-default">
+    <footer class="border-t border-default w-full">
       <div
         class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
       >
@@ -231,7 +221,6 @@
       </div>
     </footer>
 
-    <!-- flowbit script -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>

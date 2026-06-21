@@ -23,9 +23,37 @@
         >
           <img src="../picture/BORAN LOGO.png" class="h-7" alt="Boran Logo" />
         </a>
-        <div class="w-full md:block md:w-auto">
+
+        <!-- Hamburger button (visible on mobile/tablet, hidden on desktop) -->
+        <button
+          data-collapse-toggle="navbar-menu"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <!-- Collapsible menu -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-gray-50 md:bg-transparent border border-default md:border-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:dark:bg-transparent dark:bg-gray-800 dark:border-gray-700"
           >
             <li>
               <a
@@ -63,7 +91,9 @@
     </nav>
     <!-- main section -->
     <main class="pt-24 max-w-screen-xl mx-auto px-4">
-      <h1 class="text-4xl font-bold text-center">ឧបករណ៏វង់ភ្លេងល្ខោនបុរាណ</h1>
+      <h1 class="text-4xl font-bold text-center mt-4">
+        ឧបករណ៏វង់ភ្លេងល្ខោនបុរាណ
+      </h1>
       <p class="text-center text-orange-500 my-8">
         ឧបករណ៏ភ្លេងដើរតួរយ៉ាងសំខាន់នៅក្នុងការសម្តែងល្ខោនបុរាណ
         ដែលបានបញ្ចេញនូវអារម្មណ៏របស់តួសម្តែងនីមួយៗ
