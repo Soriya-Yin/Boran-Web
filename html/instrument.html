@@ -23,13 +23,11 @@
         >
           <img src="../picture/BORAN LOGO.png" class="h-7" alt="Boran Logo" />
         </a>
-
-        <!-- Hamburger button (visible on mobile/tablet, hidden on desktop) -->
         <button
-          data-collapse-toggle="navbar-menu"
+          data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-menu"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+          aria-controls="navbar-default"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
@@ -38,27 +36,26 @@
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 17 14"
+            viewBox="0 0 24 24"
           >
             <path
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
+              d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
         </button>
 
-        <!-- Collapsible menu -->
-        <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-gray-50 md:bg-transparent border border-default md:border-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:dark:bg-transparent dark:bg-gray-800 dark:border-gray-700"
+            class="font-medium flex flex-col p-4 md:p-0 mt-2 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:gap-8 mt-0 md:border-0 md:bg-neutral-primary"
           >
             <li>
               <a
                 href="index.html"
-                class="block py-2 px-3 text-black hover:underline rounded md:bg-transparent md:text-fg-brand md:p-0"
+                class="block py-2 px-3 hover:underline text-black rounded md:bg-transparent d md:p-0"
                 aria-current="page"
                 >Home</a
               >
@@ -66,23 +63,22 @@
             <li>
               <a
                 href="history.html"
-                class="block py-2 px-3 text-black rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                class="block py-2 px-3 hover:underline text-heading rounded md:border-0 md:p-0"
                 >History</a
               >
             </li>
             <li>
               <a
                 href="instrument.html"
-                class="block py-2 px-3 text-black rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                class="block py-2 px-3 hover:underline text-heading rounded md:border-0 md:p-0"
                 >Instrument</a
               >
             </li>
-
             <li>
               <a
                 href="about.html"
-                class="block py-2 px-3 text-heading rounded hover:underline md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-                >About</a
+                class="block py-2 px-3 hover:underline text-heading rounded md:border-0 md:p-0"
+                >About us</a
               >
             </li>
           </ul>
@@ -91,32 +87,13 @@
     </nav>
     <!-- main section -->
     <main class="pt-24 max-w-screen-xl mx-auto px-4">
-      <h1 class="text-4xl font-bold text-center mt-4">
+      <h1 class="text-4xl font-bold text-center text-orange-500 mt-4">
         ឧបករណ៏វង់ភ្លេងល្ខោនបុរាណ
       </h1>
-      <p class="text-center text-orange-500 my-8">
+      <p class="text-center my-8">
         ឧបករណ៏ភ្លេងដើរតួរយ៉ាងសំខាន់នៅក្នុងការសម្តែងល្ខោនបុរាណ
         ដែលបានបញ្ចេញនូវអារម្មណ៏របស់តួសម្តែងនីមួយៗ
       </p>
-      <div class="flex flex-wrap gap-4 justify-center my-6">
-        <button
-          class="w-fit hover:text-orange-600 text-black font-medium px-5 py-2.5 rounded-lg border-2"
-        >
-          ល្ខោនស្បែកធំ
-        </button>
-
-        <button
-          class="w-fit hover:text-orange-600 text-black font-medium px-5 py-2.5 rounded-lg border-2"
-        >
-          ល្ខោនស្បែកតូច
-        </button>
-
-        <button
-          class="w-fit hover:text-orange-600 text-black font-medium px-5 py-2.5 rounded-lg border-2"
-        >
-          ល្ខោនបាសាក់
-        </button>
-      </div>
 
       <div>
         <p class="text-center text-3xl font-bold my-6 text-slate-800">
@@ -128,7 +105,7 @@
           class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4"
         >
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/RorNeatEk.png"
@@ -139,7 +116,7 @@
           </div>
 
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/RorNeatThung.png"
@@ -150,7 +127,7 @@
           </div>
 
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl bg-orange-500 overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/KungVungThom.png"
@@ -160,7 +137,7 @@
             <p class="text-2xl font-bold text-center mt-4">គងវង់ធំ</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/SrorLai.png"
@@ -171,7 +148,7 @@
           </div>
 
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl bg-orange-500 overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/SkorDai.png"
@@ -181,7 +158,7 @@
             <p class="text-2xl font-bold text-center mt-4">ស្គរដូន</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl bg-orange-500 overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/Cheung.png"
@@ -203,7 +180,7 @@
           class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4"
         >
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/RorNeatEk.png"
@@ -214,7 +191,7 @@
           </div>
 
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/RorNeatThung.png"
@@ -225,7 +202,7 @@
           </div>
 
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/KungVungThom.png"
@@ -235,7 +212,7 @@
             <p class="text-2xl font-bold text-center mt-4">គងវង់ធំ</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/SrorLai.png"
@@ -245,7 +222,7 @@
             <p class="text-2xl font-bold text-center mt-4">ស្រឡៃ</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/SkorThom.png"
@@ -255,7 +232,7 @@
             <p class="text-2xl font-bold text-center mt-4">ស្គរធំ</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/SkorDai.png"
@@ -265,7 +242,7 @@
             <p class="text-2xl font-bold text-center mt-4">ស្គរដូន</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/Cheung.png"
@@ -285,7 +262,7 @@
           class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4"
         >
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/TroOu.png"
@@ -296,7 +273,7 @@
           </div>
 
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/Pan.png"
@@ -307,7 +284,7 @@
           </div>
 
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/Khem.png"
@@ -317,7 +294,7 @@
             <p class="text-2xl font-bold text-center mt-4">ឃឹម</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/Kloy.png"
@@ -327,7 +304,7 @@
             <p class="text-2xl font-bold text-center mt-4">ខ្លុយ</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/SkorThom.png"
@@ -337,7 +314,7 @@
             <p class="text-2xl font-bold text-center mt-4">ឡោ</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/Khmous.png"
@@ -347,7 +324,7 @@
             <p class="text-2xl font-bold text-center mt-4">ឃ្មោះ</p>
           </div>
           <div
-            class="border-4 rounded-2xl bg-white/5 overflow-hidden flex flex-col items-center p-4 shadow-sm"
+            class="border-4 rounded-2xl overflow-hidden flex flex-col items-center p-4 shadow-sm"
           >
             <img
               src="../picture/SkorThom.png"
@@ -358,39 +335,35 @@
           </div>
         </div>
       </div>
-      <!-- footer section -->
-      <footer class="border-t border-default">
-        <div
-          class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
-        >
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2026
-            <a href="index.html" class="hover:underline">Boran™</a>
-            . All Rights Reserved.
-          </span>
-          <ul
-            class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
-          >
-            <li>
-              <a href="about.html" class="hover:underline me-4 md:me-6"
-                >About</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6"
-                >Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </main>
+    <!-- footer section -->
+    <footer class="border-t border-default mt-12 w-full">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2026
+          <a href="index.html" class="hover:underline">Boran™</a>
+          . All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="about.html" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!-- flowbit script -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
