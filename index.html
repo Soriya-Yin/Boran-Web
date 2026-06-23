@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boran - Cambodian Agriculture</title>
-    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="src/output.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
+  <body class="bg-white d flex flex-col min-h-screen">
     <nav class="bg-white fixed w-full z-20 top-0 border-b border-default">
       <div class="flex flex-wrap items-center justify-between mx-auto p-4">
         <a
@@ -51,40 +51,49 @@
             <li>
               <a
                 href="index.html"
-                class="block py-2 px-3 hover:underline text-black rounded md:bg-transparent d md:p-0"
+                class="block py-2 px-3 hover:underline hover:text-orange-500 text-black rounded md:bg-transparent d md:p-0"
                 aria-current="page"
-                >Home</a
+                >ទំព័រដើម</a
               >
             </li>
             <li>
               <a
                 href="history.html"
-                class="block py-2 px-3 hover:underline text-heading rounded md:border-0 md:p-0"
-                >History</a
+                class="block py-2 px-3 hover:underline hover:text-orange-500 text-heading rounded md:border-0 md:p-0"
+                >ប្រវត្តិ</a
               >
             </li>
             <li>
               <a
                 href="instrument.html"
-                class="block py-2 px-3 hover:underline text-heading rounded md:border-0 md:p-0"
-                >Instrument</a
+                class="block py-2 px-3 hover:underline hover:text-orange-500 text-heading rounded md:border-0 md:p-0"
+                >ឧបករណ៏ភ្លេង</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="block py-2 px-3 hover:underline text-heading rounded md:border-0 md:p-0"
-                >About us</a
+                class="block py-2 px-3 hover:underline hover:text-orange-500 text-heading rounded md:border-0 md:p-0"
+                >អំពីយើង</a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <main class="max-w-screen-xl mx-auto p-4 pt-24 flex-grow w-full">
-      <section class="text-center max-w-2xl mx-auto pt-4 pb-16">
-        <h1 class="text-5xl text-orange-500 mb-6">ស្វាគមន៏មកកាន់ Boran</h1>
-        <p class="text-heading text-lg leading-8">
+    <main class="max-w-screen-xl mx-auto p-4 pt-24 flex-grow ">
+      <section class=" reveal relative rounded-lg overflow-hidden flex flex-col items-center">
+  <img
+    src="./picture/Baner.jpg"
+    alt="ល្ខោនស្បែកតូច"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 p-10 text-center">
+    <h2 class="font-bold text-3xl mb-5 text-orange-400">
+      ស្វាគមន៏៏មកកាន់គេហទំព័រ Boran
+    </h2>
+    <p class="text-heading text-lg text-center leading-8 text-white max-w-5xl">
           <span class="text-2xl font-bold text-orange-500">Boran</span>
           ជាគេហទំព័រឌីជីថលទៅកាន់មរតកដ៏មានសម្បូរបែបរបស់ប្រទេសកម្ពុជា។
           វេទិការបស់យើងផ្តោតលើការចែករំលែកវប្បធម៌ សិល្បៈបុរាណ
@@ -92,14 +101,14 @@
         </p>
         <a
           href="instrument.html"
-          class="inline-block mt-8 px-6 py-2.5 rounded-full border border-orange-500 text-black font-medium hover:bg-orange-500 hover:text-white transition-colors"
+          class="inline-block mt-8 px-6 py-2.5 rounded-full border border-orange-500 text-white font-medium hover:bg-orange-500 hover:text-white transition-colors"
         >
           ឧបករណ៏ភ្លេងផ្សេងៗ
         </a>
-      </section>
-
+  </div>
+</section>
       <section class="pb-16">
-        <h2 class="text-2xl font-bold text-center text-orange-500 mb-10">
+        <h2 class="text-2xl font-bold text-center text-orange-500 my-10">
           ទាំងនេះជាសិល្បៈបុរាណមួយចំនួនដែលនឹងបង្ហាញ
         </h2>
 
@@ -167,53 +176,67 @@
               ល្ខោនបាសាក់
             </span>
           </div>
-
           <div
-            class="relative w-full rounded-2xl border-2 border-dashed flex items-center justify-center"
+            class="relative overflow-hidden aspect-[4/3] w-full rounded-2xl group shadow-sm"
           >
-            <p class="text-2xl font-bold text-orange-500 tracking-tight">
-              Coming Soon...
-            </p>
+            <img
+              src="./picture/LakhoanAhPee.jpg"
+              alt="Lakhon Basak theatre"
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <span class="absolute bottom-4 left-6 font-moul text-white text-xl">
+              ល្ខោនអាប៉េ
+            </span>
           </div>
           <div
-            class="relative w-full rounded-2xl border-2 border-dashed flex items-center justify-center"
+            class="relative overflow-hidden aspect-[4/3] w-full rounded-2xl group shadow-sm"
           >
-            <p class="text-2xl font-bold text-orange-500 tracking-tight">
-              Coming Soon...
-            </p>
+            <img
+              src="./picture/LakhaonNiyey.jpg"
+              alt="Lakhon Basak theatre"
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <span class="absolute bottom-4 left-6 font-moul text-white text-xl">
+              ល្ខោននិយាយ
+            </span>
           </div>
-        </div>
+          <div class="w-full flex col-span-full  items-center justify-center">
+             <a
+          href="index.html"
+          class="mt-8 px-6 py-2 rounded-full border border-orange-500 text-black font-medium hover:bg-orange-500 hover:text-white transition-colors"
+        >
+          ត្រឡប់ទៅវិញ
+        </a>
+          </div>
+           
       </section>
     </main>
-
-    <footer class="border-t border-default w-full">
+    <!-- footer section -->
+    <footer class="border-t border-default mt-12 w-full">
       <div
-        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+        class="w-full mx-auto  p-4 md:flex md:items-center md:justify-between"
       >
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2026
           <a href="index.html" class="hover:underline">Boran™</a>
-          . All Rights Reserved.
+          .រក្សាសិទ្ធគ្រប់យ៉ាង.
         </span>
         <ul
           class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
         >
           <li>
-            <a href="about.html" class="hover:underline me-4 md:me-6">About</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline">Contact</a>
+            <a href="about.html" class="hover:underline me-4 md:me-6">អំពីយើង</a>
           </li>
         </ul>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+   
   </body>
 </html>
