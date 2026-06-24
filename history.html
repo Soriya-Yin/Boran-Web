@@ -12,36 +12,52 @@
     />
   </head>
   <body class="bg-white">
-    <nav class="bg-white fixed w-full z-20 top-0 border-b shadow-sm rounded-4xl
-    ">
-      <div class="flex flex-wrap items-center justify-between mx-auto p-4 max-w-7xl">
+    <nav
+      class="bg-white fixed w-[92%] max-w-7xl z-20 top-4 left-1/2 -translate-x-1/2 border shadow-sm rounded-3xl md:rounded-full px-2"
+    >
+      <div
+        class="flex flex-wrap items-center justify-between mx-auto p-4 max-w-7xl"
+      >
         <a
           href="index.html"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src="./picture/BORAN LOGO.png" class="h-7" alt="Boran Logo" />
         </a>
-     <button
-      data-collapse-toggle="navbar-default"
-      type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-stone-600 rounded-lg md:hidden hover:bg-amber-50 hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-300"
-      aria-controls="navbar-default"
-      aria-expanded="false"
-    >
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
 
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-stone-600 rounded-lg md:hidden hover:bg-amber-50 hover:text-orange-500 focus:outline-none"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto mt-2" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0  bg-neutral-secondary-soft md:flex-row md:gap-8 mt-0 md:border-0 md:bg-neutral-primary"
+            class="font-medium flex flex-col p-4 bg-gray-50/80 border border-gray-100 rounded-2xl md:p-0 md:flex-row md:gap-8 md:border-0 md:bg-transparent mt-2 md:mt-0"
           >
             <li>
               <a
                 href="index.html"
-                class="block py-2 px-3 hover:underline hover:text-orange-500 text-black rounded md:bg-transparent d md:p-0"
+                class="block py-2 px-3 hover:underline hover:text-orange-500 text-black rounded md:bg-transparent md:p-0"
                 aria-current="page"
                 >ទំព័រដើម</a
               >
@@ -79,7 +95,10 @@
         <div class="w-32 h-1 bg-orange-500 mx-auto mb-8 mt-4 rounded"></div>
       </header>
       <!-- ល្ខោនខោល -->
-      <section class="reveal grid md:grid-cols-2 gap-10 items-center">
+      <section
+        class="reveal grid md:grid-cols-2 gap-10 items-center"
+        id="lakhoan-khol"
+      >
         <div class="frame order-1">
           <img
             src="./picture/lakhoan khol.webp"
@@ -126,7 +145,10 @@
       <div class="motif-divider w-full"></div>
 
       <!-- ល្ខោនខោលស្បែកធំ -->
-      <section class="reveal grid md:grid-cols-2 gap-10 items-center">
+      <section
+        class="reveal grid md:grid-cols-2 gap-10 items-center"
+        id="lakhaon-sbek-thom"
+      >
         <div class="order-2 md:order-1">
           <h2 class="font-bold text-3xl text-parchment mb-5 text-orange-400">
             ល្ខោនខោលស្បែកធំ
@@ -167,7 +189,10 @@
       <div class="motif-divider w-full"></div>
 
       <!-- ល្ខោនស្បែកតូច -->
-      <section class="reveal grid md:grid-cols-2 gap-10 items-center">
+      <section
+        class="reveal grid md:grid-cols-2 gap-10 items-center"
+        id="lakhaon-sbek-thouch"
+      >
         <div class="frame order-1">
           <img
             src="./picture/LakhoanSbekTouch.jpg"
@@ -199,7 +224,10 @@
       <div class="motif-divider w-full"></div>
 
       <!-- ល្ខោនខោលបាសាក់ -->
-      <section class="reveal grid md:grid-cols-2 gap-10 items-center">
+      <section
+        class="reveal grid md:grid-cols-2 gap-10 items-center"
+        id="lakhaon-basak"
+      >
         <div class="order-2 md:order-1">
           <h2 class="font-bold text-3xl text-parchment mb-5 text-orange-400">
             ល្ខោនខោលបាសាក់
@@ -225,7 +253,10 @@
       </section>
       <!-- ល្ខោនអាប៉េ -->
 
-      <section class="reveal grid md:grid-cols-2 gap-10 items-center">
+      <section
+        class="reveal grid md:grid-cols-2 gap-10 items-center"
+        id="lakhaon-ahpe"
+      >
         <div class="frame order-1">
           <img
             src="./picture/LakhoanAhPee.jpg"
@@ -258,7 +289,10 @@
       <!--ល្ខោននិយាយ -->
       <section class="reveal grid md:grid-cols-2 gap-10 items-center">
         <div class="order-2 md:order-1">
-          <h2 class="font-bold text-3xl text-parchment mb-5 text-orange-400">
+          <h2
+            class="font-bold text-3xl text-parchment mb-5 text-orange-400"
+            id="lakhaon-ni-yey"
+          >
             ល្ខោននិយាយ
           </h2>
           <p class="leading-8 text-lg">
@@ -301,10 +335,11 @@
         </ul>
       </div>
     </footer>
-     <script>
-      document.querySelector('[data-collapse-toggle="navbar-default"]')
-        .addEventListener('click', () => {
-          document.getElementById('navbar-default').classList.toggle('hidden');
+    <script>
+      document
+        .querySelector('[data-collapse-toggle="navbar-default"]')
+        .addEventListener("click", () => {
+          document.getElementById("navbar-default").classList.toggle("hidden");
         });
     </script>
   </body>
